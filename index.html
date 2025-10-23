@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashwanth Thurpati | Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <h2>Loading Portfolio</h2>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo-container">
+                    <div class="nav-profile">
+                        <img src="Pi7-Image-Cropper (2).png" alt="Profile Picture">
+                    </div>
+                    <a href="#" class="logo">Yashwanth</a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="hamburger" id="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div id="particles-js"></div>
+        <div class="floating-elements" id="floatingElements"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hi, I'm <span id="typing-text">Yashwanth Thurpati</span></h1>
+                <p>Aspiring Computer Science professional with expertise in Python, Web & App Development. Passionate about creating innovative solutions and gaining hands-on industry experience.</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View My Work</a>
+                    <a href="#contact" class="btn btn-outline">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Computer Science Student & Developer</h3>
+                    <p>I'm a passionate Computer Science student at Malla Reddy Deemed University, expected to graduate in 2027. With a strong foundation in programming and web development, I'm constantly exploring new technologies and building innovative projects.</p>
+                    <p>My career objective is to secure an internship where I can apply my skills in Python, Web & App Development while gaining valuable industry experience. I'm particularly interested in full-stack development, AI integration, and creating user-friendly applications.</p>
+                    <div class="about-skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Flutter</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">UI/UX Design</span>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <!-- Profile image will be loaded via CSS background -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="edu-date">2023 - 2027</div>
+                        <h3 class="edu-title">Bachelor of Technology in Computer Science</h3>
+                        <div class="edu-institution">Malla Reddy Deemed University</div>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-details">
+                            <p><strong>GPA:</strong> 8.4/10</p>
+                            <p>Specializing in Software Development and AI technologies. Actively participating in coding competitions and hackathons.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="edu-date">2021 - 2023</div>
+                        <h3 class="edu-title">Class XII (TSBIE)</h3>
+                        <div class="edu-institution">Resonance Junior College</div>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-details">
+                            <p><strong>Percentage:</strong> 95%</p>
+                            <p>Focused on Mathematics, Physics, and Chemistry. Developed strong analytical and problem-solving skills.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-header">
+                        <div class="edu-date">2011 - 2021</div>
+                        <h3 class="edu-title">Class X (CBSE)</h3>
+                        <div class="edu-institution">SR Prime School</div>
+                    </div>
+                    <div class="edu-content">
+                        <div class="edu-details">
+                            <p><strong>Percentage:</strong> 90%</p>
+                            <p>Developed foundational knowledge in science and mathematics. Participated in various extracurricular activities.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-grid">
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-date">Jun - Aug 2025</div>
+                        <h3 class="exp-title">Project Intern</h3>
+                        <div class="exp-company">Apex Planet Software Pvt Ltd</div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-details">
+                            <p>Contributed to designing and developing responsive web applications using HTML, CSS, JavaScript, and React. Collaborated with teams on product UI/UX and feature optimization.</p>
+                            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, React</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-date">2023 - 2024</div>
+                        <h3 class="exp-title">Business Associate</h3>
+                        <div class="exp-company">Winzera Pvt Ltd</div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-details">
+                            <p>Gained exposure to business operations, teamwork, and communication while working in a dynamic corporate environment. Assisted in marketing campaigns and client management.</p>
+                            <p><strong>Skills:</strong> Communication, Teamwork, Business Strategy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <div class="exp-date">2021 - 2024</div>
+                        <h3 class="exp-title">NCC Cadet</h3>
+                        <div class="exp-company">ARMY 4T (BTN)</div>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-details">
+                            <p>Developed teamwork, leadership, and organizational skills through regular camps, parades, and social outreach programs. Received Highest Qualification "C" Certificate. Led a team of 20 cadets during training camp.</p>
+                            <p><strong>Achievement:</strong> "C" Certificate (Highest Qualification)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1073&q=80" alt="PROPIFY Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PROPIFY</h3>
+                        <p class="project-description">Property Rental Management System with property recommendations, user authentication, and responsive dashboards.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Django</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://yashwanth0415.github.io/Propify/yash.html" class="btn" target="_blank">Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="PLANT PULSE Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PLANT PULSE</h3>
+                        <p class="project-description">AI-Powered Agriculture Project to monitor crop conditions through user input and plant images with ML recommendations.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Web Technologies</span>
+                            <span class="tech-tag">AI Integration</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://plantpulse.figma.site/" class="btn" target="_blank">Design Demo</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80" alt="TRACKMATE Project">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">TRACKMATE</h3>
+                        <p class="project-description">Smart Bus Tracking System with real-time location updates and route monitoring for enhanced safety.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">TypeScript</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">TailwindCSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://trackmate.figma.site/" class="btn" target="_blank">Design Demo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-container">
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Technical Skills</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-python"></i> Python</li>
+                        <li><i class="fab fa-js"></i> JavaScript</li>
+                        <li><i class="fas fa-cube"></i> C (Basics)</li>
+                        <li><i class="fab fa-html5"></i> HTML/CSS</li>
+                        <li><i class="fab fa-react"></i> React</li>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-tasks"></i> Project Management</li>
+                        <li><i class="fas fa-handshake"></i> Teamwork</li>
+                        <li><i class="fas fa-clock"></i> Time Management</li>
+                        <li><i class="fas fa-flag"></i> Leadership</li>
+                        <li><i class="fas fa-comments"></i> Communication</li>
+                        <li><i class="fas fa-chart-line"></i> Digital Marketing</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Technologies</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-code"></i> VS Code</li>
+                        <li><i class="fab fa-android"></i> Android Studio</li>
+                        <li><i class="fab fa-git-alt"></i> Git</li>
+                        <li><i class="fab fa-figma"></i> Figma</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                        <li><i class="fab fa-microsoft"></i> Azure</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <h3 style="text-align: center; margin: 50px 0 30px; color: var(--primary);">Technical Proficiency</h3>
+            <div class="tech-skills-grid">
+                <div class="tech-skill-card">
+                    <div class="tech-skill-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <div class="tech-skill-name">Python</div>
+                    <div class="tech-skill-level">
+                        <div class="tech-skill-progress" style="width: 90%"></div>
+                    </div>
+                </div>
+                <div class="tech-skill-card">
+                    <div class="tech-skill-icon">
+                        <i class="fab fa-js"></i>
+                    </div>
+                    <div class="tech-skill-name">JavaScript</div>
+                    <div class="tech-skill-level">
+                        <div class="tech-skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="tech-skill-card">
+                    <div class="tech-skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-skill-name">HTML/CSS</div>
+                    <div class="tech-skill-level">
+                        <div class="tech-skill-progress" style="width: 95%"></div>
+                    </div>
+                </div>
+                <div class="tech-skill-card">
+                    <div class="tech-skill-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <div class="tech-skill-name">React</div>
+                    <div class="tech-skill-level">
+                        <div class="tech-skill-progress" style="width: 80%"></div>
+                    </div>
+                </div>
+                <div class="tech-skill-card">
+                    <div class="tech-skill-icon">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <div class="tech-skill-name">Git</div>
+                    <div class="tech-skill-level">
+                        <div class="tech-skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="tech-skill-card">
+                    <div class="tech-skill-icon">
+                        <i class="fab fa-figma"></i>
+                    </div>
+                    <div class="tech-skill-name">Figma</div>
+                    <div class="tech-skill-level">
+                        <div class="tech-skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <h2 class="section-title">Certifications</h2>
+            <div class="certifications-grid">
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80" alt="Azure AI Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Azure AI</h3>
+                        <p class="cert-issuer">Microsoft</p>
+                        <a href="https://www.credly.com/badges/92979dc8-05ed-4950-a79a-613bb98788bf/linked_in_profile" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1526379879527-8559ecfcaec0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Python Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Python Certification</h3>
+                        <p class="cert-issuer">NPTEL</p>
+                        <a href="https://archive.nptel.ac.in/noc/Ecertificate/?q=NPTEL24CS68S13680064302769597" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Google Analytics Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Google Analytics</h3>
+                        <p class="cert-issuer">Google</p>
+                        <a href="#" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1176&q=80" alt="Business English Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Business English</h3>
+                        <p class="cert-issuer">GetGrad</p>
+                        <a href="#" class="cert-link">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Java Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">Java Certification</h3>
+                        <p class="cert-issuer">HackerRank</p>
+                        <a href="https://www.hackerrank.com/certificates/4bbf52f7e614" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="CSS Certification">
+                    </div>
+                    <div class="cert-content">
+                        <h3 class="cert-title">CSS Certification</h3>
+                        <p class="cert-issuer">HackerRank</p>
+                        <a href="https://www.hackerrank.com/certificates/iframe/78d750ad8f90" class="cert-link" target="_blank">View Certificate <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 9849954617</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>thurpatiyashwanth@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div>
+                            <h3>Website</h3>
+                            <p>www.portfolio.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder=" " required>
+                            <label for="name" class="form-label">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder=" " required>
+                            <label for="email" class="form-label">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder=" " required>
+                            <label for="subject" class="form-label">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="message" placeholder=" " required></textarea>
+                            <label for="message" class="form-label">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn" id="submitBtn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>Yashwanth Thurpati</h3>
+                    <p>Aspiring Computer Science professional with expertise in Python, Web & App Development. Passionate about creating innovative solutions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect With Me</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Yashwanth Thurpati. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <script>
+    // Initialize EmailJS with your User ID
+    emailjs.init("YOUR_USER_ID"); // Replace with your actual EmailJS User ID
+
+    // DOM Elements
+    const themeToggle = document.getElementById('themeToggle');
+    const body = document.body;
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    const contactForm = document.getElementById('contactForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const loader = document.getElementById('loader');
+    const scrollToTop = document.getElementById('scrollToTop');
+    const header = document.getElementById('header');
+    const navLinkItems = document.querySelectorAll('.nav-link');
+    const floatingElements = document.getElementById('floatingElements');
+    const typingText = document.getElementById('typing-text');
+    const techSkillCards = document.querySelectorAll('.tech-skill-card');
+
+    // Theme Toggle
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        if (body.classList.contains('dark-mode')) {
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            localStorage.setItem('theme', 'dark');
+        } else {
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            localStorage.setItem('theme', 'light');
+        }
+    });
+
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+
+    // Mobile Menu Toggle
+    hamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+        hamburger.innerHTML = navLinks.classList.contains('active') 
+            ? '<i class="fas fa-times"></i>' 
+            : '<i class="fas fa-bars"></i>';
+    });
+
+    // Close mobile menu when clicking on a link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+        });
+    });
+
+    // Header scroll effect
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+
+        // Show/hide scroll to top button
+        if (window.scrollY > 500) {
+            scrollToTop.classList.add('active');
+        } else {
+            scrollToTop.classList.remove('active');
+        }
+
+        // Update active nav link
+        updateActiveNavLink();
+    });
+
+    // Scroll to top functionality
+    scrollToTop.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+
+    // Update active nav link based on scroll position
+    function updateActiveNavLink() {
+        const scrollPosition = window.scrollY;
+        
+        document.querySelectorAll('section').forEach(section => {
+            const sectionTop = section.offsetTop - 100;
+            const sectionHeight = section.clientHeight;
+            const sectionId = section.getAttribute('id');
+            
+            if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === `#${sectionId}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+        });
+    }
+
+    // Create floating elements
+    function createFloatingElements() {
+        for (let i = 0; i < 15; i++) {
+            const element = document.createElement('div');
+            element.classList.add('floating-element');
+            
+            // Random size between 20px and 100px
+            const size = Math.random() * 80 + 20;
+            element.style.width = `${size}px`;
+            element.style.height = `${size}px`;
+            
+            // Random position
+            element.style.left = `${Math.random() * 100}%`;
+            element.style.top = `${Math.random() * 100}%`;
+            
+            // Random animation duration between 10s and 30s
+            element.style.animationDuration = `${Math.random() * 20 + 10}s`;
+            
+            // Random animation delay
+            element.style.animationDelay = `${Math.random() * 5}s`;
+            
+            floatingElements.appendChild(element);
+        }
+    }
+
+    // Typing animation
+    function typeWriter(element, text, speed = 100) {
+        let i = 0;
+        element.innerHTML = '';
+        
+        function type() {
+            if (i < text.length) {
+                element.innerHTML += text.charAt(i);
+                i++;
+                setTimeout(type, speed);
+            }
+        }
+        
+        type();
+    }
+
+    // Contact form submission
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        
+        // Get form data
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const subject = document.getElementById('subject').value;
+        const message = document.getElementById('message').value;
+        
+        // Change button text to indicate sending
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+        submitBtn.disabled = true;
+        
+        // EmailJS parameters
+        const templateParams = {
+            from_name: name,
+            from_email: email,
+            subject: subject,
+            message: message,
+            to_email: 'thurpatiyashwanth@gmail.com'
+        };
+        
+        // Send email using EmailJS
+        emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+            .then((response) => {
+                alert('Message sent successfully!');
+                contactForm.reset();
+                submitBtn.innerHTML = 'Send Message';
+                submitBtn.disabled = false;
+            }, (error) => {
+                // Fallback to mailto if EmailJS fails
+                const to = "thurpatiyashwanth@gmail.com";
+                const mailtoLink = `mailto:${to}?subject=${encodeURIComponent(subject)}&body=From: ${encodeURIComponent(name)} (${encodeURIComponent(email)})%0A%0A${encodeURIComponent(message)}`;
+                window.location.href = mailtoLink;
+                
+                submitBtn.innerHTML = 'Send Message';
+                submitBtn.disabled = false;
+            });
+    });
+
+    // Animate tech skill progress bars on scroll
+    function animateProgressBars() {
+        techSkillCards.forEach(card => {
+            const progressBar = card.querySelector('.tech-skill-progress');
+            if (progressBar) {
+                // Reset width to 0
+                progressBar.style.width = '0%';
+                
+                // Get the target width from the style attribute
+                const targetWidth = progressBar.getAttribute('style').match(/width: (\d+)%/)[1];
+                
+                // Animate to target width
+                setTimeout(() => {
+                    progressBar.style.width = targetWidth + '%';
+                }, 300);
+            }
+        });
+    }
+
+    // GSAP Animations
+    gsap.registerPlugin(ScrollTrigger, TextPlugin);
+
+    // Animate hero section
+    gsap.from('.hero-content', {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        ease: 'power3.out'
+    });
+
+    // Animate section titles
+    gsap.utils.toArray('.section-title').forEach(title => {
+        gsap.from(title, {
+            scrollTrigger: {
+                trigger: title,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            duration: 0.8,
+            y: 30,
+            opacity: 0,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate education cards
+    gsap.utils.toArray('.edu-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            duration: 0.8,
+            y: 50,
+            opacity: 0,
+            delay: i * 0.1,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate experience cards
+    gsap.utils.toArray('.exp-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            duration: 0.8,
+            y: 50,
+            opacity: 0,
+            delay: i * 0.1,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate project cards
+    gsap.utils.toArray('.project-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            duration: 0.8,
+            y: 50,
+            opacity: 0,
+            delay: i * 0.1,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate skill categories
+    gsap.utils.toArray('.skill-card').forEach((category, i) => {
+        gsap.from(category, {
+            scrollTrigger: {
+                trigger: category,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            duration: 0.8,
+            y: 30,
+            opacity: 0,
+            delay: i * 0.1,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate technical skills with progress bars
+    gsap.utils.toArray('.tech-skill-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse',
+                onEnter: () => animateProgressBars()
+            },
+            duration: 0.8,
+            y: 30,
+            opacity: 0,
+            delay: i * 0.05,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate certification cards
+    gsap.utils.toArray('.cert-card').forEach((card, i) => {
+        gsap.from(card, {
+            scrollTrigger: {
+                trigger: card,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            duration: 0.8,
+            y: 30,
+            opacity: 0,
+            delay: i * 0.1,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate contact items
+    gsap.utils.toArray('.contact-item').forEach((item, i) => {
+        gsap.from(item, {
+            scrollTrigger: {
+                trigger: item,
+                start: 'top 80%',
+                end: 'bottom 20%',
+                toggleActions: 'play none none reverse'
+            },
+            duration: 0.8,
+            x: -30,
+            opacity: 0,
+            delay: i * 0.1,
+            ease: 'power2.out'
+        });
+    });
+
+    // Animate contact form
+    gsap.from('.contact-form', {
+        scrollTrigger: {
+            trigger: '.contact-form',
+            start: 'top 80%',
+            end: 'bottom 20%',
+            toggleActions: 'play none none reverse'
+        },
+        duration: 0.8,
+        x: 30,
+        opacity: 0,
+        ease: 'power2.out'
+    });
+
+    // Loading screen
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            loader.classList.add('hidden');
+            
+            // Start typing animation after page loads
+            typeWriter(typingText, 'Yashwanth Thurpati', 100);
+            
+            // Create floating elements
+            createFloatingElements();
+        }, 1500);
+    });
+
+    // Particle.js configuration
+    // Note: In a real implementation, you would include the particles.js library
+    // and initialize it here. For this example, we'll simulate the effect with CSS.
+</script>
+</body>
+</html>

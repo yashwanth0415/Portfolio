@@ -271,9 +271,9 @@ h2{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,4.6vw,3.6re
 .reduce .st,.reduce .cert{transform:none!important;opacity:1!important}
 
 /* Dynamic portfolio media managed from /admin */
-.project-image-frame{position:relative;min-height:260px;aspect-ratio:4/3;overflow:hidden;border-radius:22px;border:1px solid rgba(169,207,246,.28);background:linear-gradient(145deg,#10236b,#08123a);box-shadow:0 50px 100px -30px rgba(0,0,0,.85),0 0 0 1px rgba(0,0,0,.4)}
-.project-image-frame img{width:100%;height:100%;min-height:260px;position:absolute;inset:0;object-fit:cover;transition:transform .5s ease}
-.project-image-frame:hover img{transform:scale(1.035)}
+.project-image-frame{position:relative;width:100%;height:auto;overflow:hidden;border-radius:22px;border:1px solid rgba(169,207,246,.28);background:linear-gradient(145deg,#10236b,#08123a);box-shadow:0 50px 100px -30px rgba(0,0,0,.85),0 0 0 1px rgba(0,0,0,.4)}
+.project-image-frame img{display:block;width:100%;height:auto;min-height:0;position:static;object-fit:contain;object-position:center;transition:filter .25s ease}
+.project-image-frame:hover img{filter:brightness(1.035)}
 .cert{display:flex;color:inherit;text-decoration:none;cursor:pointer;overflow:hidden;isolation:isolate;transition:transform .25s,border-color .25s}
 .cert::before{content:"";position:absolute;inset:0;z-index:-2;background-image:var(--issuer-logo);background-repeat:no-repeat;background-position:center;background-size:min(72%,220px);opacity:.13;filter:grayscale(1);pointer-events:none}
 .cert::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(145deg,rgba(8,18,56,.35),rgba(6,14,38,.9));pointer-events:none}
@@ -285,12 +285,12 @@ h2{font-family:var(--display);font-weight:800;font-size:clamp(1.9rem,4.6vw,3.6re
 .upload-field .upload-picker{display:inline-flex;align-items:center;margin-top:8px;padding:8px 12px;border:1px solid var(--line);border-radius:10px;background:#121e40;cursor:pointer}
 .upload-field .upload-picker input{display:block;width:auto;max-width:100%;padding:0;border:0;background:transparent}
 .upload-preview{display:block;width:min(220px,100%);max-height:140px;object-fit:contain;object-position:left center;margin-top:10px;border:1px solid var(--line);border-radius:10px;background:#09122a}
-@media(max-width:600px){.project-image-frame,.project-image-frame img{min-height:200px}.cert .cert-watermark{font-size:.6rem}}
+@media(max-width:600px){.project-image-frame{min-height:0}.cert .cert-watermark{font-size:.6rem}}
 
 
 /* Contact message form */
 .message-form-wrap{max-width:760px;margin:54px auto 0;padding:clamp(22px,4vw,42px);text-align:left;border:1px solid rgba(169,207,246,.22);border-radius:24px;background:rgba(5,13,37,.45)}
-.message-form-title{font-family:var(--display);font-size:clamp(1rem,2vw,1.05rem);line-height:1.25;letter-spacing:-.025em;margin-bottom:8px}
+.message-form-title{font-family:var(--display);font-size:clamp(1rem,2vw,1.35rem);line-height:1.25;letter-spacing:-.025em;margin-bottom:8px}
 .message-form-intro{color:var(--muted);margin-bottom:24px}
 .message-form{display:grid;gap:16px}
 .message-form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -341,3 +341,11 @@ body.modal-open{overflow:hidden}
 
 /* Minimal portfolio footer */
 .site-footer{width:min(1140px,90vw);margin:0 auto;padding:0 0 max(28px,env(safe-area-inset-bottom));text-align:center;color:var(--muted);font-size:.85rem;letter-spacing:.01em}
+
+
+/* Project preview is a direct link: only the image/mockup area opens the live project. */
+.project-preview-link{display:block;color:inherit;text-decoration:none;border-radius:22px;cursor:pointer;outline-offset:5px}
+.project-preview-link:focus-visible{outline:2px solid var(--amber)}
+.project-preview-link .project-image-frame,.project-preview-link .mock{transition:transform .25s ease,box-shadow .25s ease}
+.project-preview-link:hover .project-image-frame,.project-preview-link:hover .mock{box-shadow:0 50px 100px -30px rgba(0,0,0,.85),0 0 0 1px rgba(169,207,246,.42)}
+.project-preview-link:active .project-image-frame,.project-preview-link:active .mock{transform:scale(.995)}
